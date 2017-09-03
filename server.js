@@ -10,9 +10,11 @@ app.get('/', function (req, res) {
 });
 
 
-var articleOne= {
+var articles= {
+    'article-one': {
     title: 'Article one',
     heading: 'Article one',
+    date: 'aug 3, 2017',
     content: `
                 <p>
                     Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
@@ -23,12 +25,34 @@ var articleOne= {
                 <p>
                     Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
                 </p>`
-    };
+    },
+    'article-two': {
+    title: 'Article two',
+    heading: 'Article two',
+     date: 'aug 13, 2017'
+    content: `
+                <p>
+                    My second article
+                </p>`
+                
+    },
+    'article-three': {
+    title: 'Article one',
+    heading: 'Article one',
+    date: 'aug 23, 2017'
+    content: `
+                <p>
+                    Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
+                </p>`
+                
+    },
+};
 function createTemplate(data)
 {
     var title= data.title;
     var heading= data.heading;
     var content= data.content;
+    var date= data.date;
     var htmlTemplate= `
     <html>
         <head>
@@ -44,6 +68,9 @@ function createTemplate(data)
                 <h1>
                     ${heading}
                 </h1>
+                <h1>
+                    ${date}
+                </h1>
                 <div>
                     ${content}
                 </div>
@@ -55,19 +82,11 @@ function createTemplate(data)
     return htmlTemplate;
 }
 
-app.get('/article-one', function(req, res){
-    res.send(createTemplate(articleOne));
+app.get('/:articleName', function(req, res){
+    var articleName= req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
 });
 
-
-app.get('/article-two', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-
-
-app.get('/article-three', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
