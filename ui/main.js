@@ -10,7 +10,7 @@ function marginRight(){
     img.style.marginTop= marginLeft + 'px';
 }
 function marginRight1(){
-    img.style.marginTop= marginLeft + 'px';
+    img.style.marginLeft= marginLeft + 'px';
 }
 img.onclick = function() {
 
