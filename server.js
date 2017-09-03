@@ -48,12 +48,11 @@ function createTemplate(data)
             
         </body>
     </html>
-    
     `;
 }
 
 app.get('/article-one', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createTemplate(articleOne));
 });
 
 
