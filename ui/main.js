@@ -4,6 +4,11 @@ var element=document.getElementById('mmain-text');
 element.innerHTML='Changed content';
 
 var img=document.getElementById('madi');
+function marginRight(){
+    marginLeft= marginLeft + 10;
+    img.style.marginLeft= marginLeft + 'px';
+}
 img.onclick = function() {
-    img.style.marginLeft= '100px';
+
+   var time= setInterval(marginRight, 100);
 };
