@@ -9,7 +9,12 @@ function marginRight(){
     marginLeft= marginLeft + 10;
     img.style.marginLeft= marginLeft + 'px';
 }
+function marginRight1(){
+    marginLeft= marginLeft + 1;
+    img.style.marginLeft= marginLeft + 'px';
+}
 img.onclick = function() {
 
    var time= setInterval(marginRight, 100);
+   var time1= setInterval(marginRight1, 100);
 };
