@@ -1,7 +1,7 @@
 console.log('Loaded!');
 
 var element=document.getElementById('mmain-text');
-element.innerHTML='Changed content';
+element.innerHTML='Click me';
 
 var img=document.getElementById('madi');
 var marginLeft= 100;
