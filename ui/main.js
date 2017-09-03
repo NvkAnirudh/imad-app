@@ -4,7 +4,7 @@ var element=document.getElementById('mmain-text');
 element.innerHTML='Click me';
 
 var img=document.getElementById('madi');
-var marginLeft= 100;
+var marginLeft= 90;
 function marginRight(){
     marginLeft= marginLeft - 10;
     img.style.marginLeft= marginLeft + 'px';
