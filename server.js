@@ -29,7 +29,7 @@ var articles= {
     'article-two': {
     title: 'Article two',
     heading: 'Article two',
-     date: 'aug 13, 2017'
+     date: 'aug 13, 2017',
     content: `
                 <p>
                     My second article
@@ -39,7 +39,7 @@ var articles= {
     'article-three': {
     title: 'Article one',
     heading: 'Article one',
-    date: 'aug 23, 2017'
+    date: 'aug 23, 2017',
     content: `
                 <p>
                     Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
