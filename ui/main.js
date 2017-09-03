@@ -6,7 +6,7 @@ element.innerHTML='Click me';
 var img=document.getElementById('madi');
 var marginLeft= 0;
 function marginRight(){
-    marginLeft= marginLeft + 1;
+    marginLeft= marginLeft + 5;
     img.style.marginLeft= marginLeft + 'px';
 }
 img.onclick = function() {
