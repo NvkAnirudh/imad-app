@@ -13,6 +13,6 @@ function marginRight(){
 
 img.onclick = function() {
 
-   var time= setInterval(marginRight, 50);
+   var time= setInterval(marginRight, 100);
   
 };
