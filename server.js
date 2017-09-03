@@ -32,17 +32,17 @@ var articles= {
      date: 'aug 13, 2017',
     content: `
                 <p>
-                    My second article
+                    My second article.
                 </p>`
                 
     },
     'article-three': {
-    title: 'Article one',
-    heading: 'Article one',
+    title: 'Article three',
+    heading: 'Article three',
     date: 'aug 23, 2017',
     content: `
                 <p>
-                    Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
+                    My third article.
                 </p>`
                 
     },
