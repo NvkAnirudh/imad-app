@@ -4,7 +4,7 @@ var element=document.getElementById('mmain-text');
 element.innerHTML='Changed content';
 
 var img=document.getElementById('madi');
-var marginLeft= 0;
+var marginLeft= 100;
 function marginRight(){
     marginLeft= marginLeft - 10;
     img.style.marginLeft= marginLeft + 'px';
