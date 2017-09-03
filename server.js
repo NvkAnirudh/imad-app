@@ -9,6 +9,49 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+
+var articleOne= {
+    title: 'Article one',
+    heading: 'Article one',
+    content: `
+                <p>
+                    Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
+                </p>
+                <p>
+                    Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
+                </p>
+                <p>
+                    Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. Liverpool is an english club. 
+                </p>`
+    };
+function createTemplate(data)
+{
+    var title= data.title;
+    var heading= data.heading;
+    var content= data.content;
+    var htmlTemplate `
+    <html>
+        <head>
+            <title>${title}</title>
+             <meta name="viewport" content="width-device-width initial-scale=1"/>
+        </head>
+        <body>
+            <div>
+                <a href="/">HOME</a>
+            </div>
+            <h1>
+                ${heading}
+            </h1>
+            <div>
+                ${content}
+            </div>
+            
+        </body>
+    </html>
+    
+    `;
+}
+
 app.get('/article-one', function(req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
