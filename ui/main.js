@@ -6,13 +6,13 @@ element.innerHTML='Click me';
 var img=document.getElementById('madi');
 var marginLeft= 0;
 function marginRight(){
-    marginLeft= marginLeft + 10;
+    marginLeft= marginLeft + 1;
     img.style.marginTop= marginLeft + 'px';
 
 }
 
 img.onclick = function() {
 
-   var time= setInterval(marginRight, 100);
+   var time= setInterval(marginRight, 50);
   
 };
