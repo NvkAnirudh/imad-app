@@ -11,6 +11,8 @@ button.onclick= function() {
                 span.innerHTML = counter.toString();
             }
         }
-    }
+    };
+    request.open('GET', 'http://nutikrish4.imad.hasura-app.io/', true);
+    request.send(null);
      
-}
+};
