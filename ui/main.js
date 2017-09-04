@@ -18,7 +18,7 @@ button.onclick= function() {
 };
 
 var submitName = documment.getElementById('submit_btn');
-submmitName.onclick= function() {
+submitName.onclick= function() {
     
     var names = ['name1', 'name2', 'name3', 'name4'];
     list ='';
