@@ -20,7 +20,7 @@ submitName.onclick= function() {
         }
     };
     
-    var nameInput = document.getElementById();
+    var nameInput = document.getElementById('name');
     var name= nameInput.value;
     request.open('GET', 'http://nutikrish4.imad.hasura-app.io/', true);
     request.send(null);
