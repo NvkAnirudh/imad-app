@@ -27,4 +27,4 @@ submmitName.onclick= function() {
         }
     var ul= getElementById('ul_id');
     ul.innerHTML= list;
-}
+};
