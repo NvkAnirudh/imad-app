@@ -16,3 +16,15 @@ button.onclick= function() {
     request.send(null);
      
 };
+
+var submitName = documment.getElementById('submit_btn');
+submmitName.onclick= function() {
+    
+    var names = ['name1', 'name2', 'name3', 'name4'];
+    list ='';
+    for(i=0;i<names. length;i++){
+        list += '<li>' + names[i] + '</li>';
+        }
+    var ul= getElementById('ul_id');
+    ul.innerHTML= list;
+}
